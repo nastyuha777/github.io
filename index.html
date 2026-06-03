@@ -93,6 +93,11 @@
             border-radius: 70px;
         }
 
+        .hero-emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
         .hero h1 {
             font-size: 3rem;
             font-weight: 800;
@@ -105,28 +110,6 @@
             max-width: 700px;
             margin: 0 auto;
             color: #7a5a44;
-        }
-
-        .hero-photos {
-            display: flex;
-            justify-content: center;
-            gap: 25px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-
-        .hero-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-            transition: transform 0.2s;
-        }
-
-        .hero-photo:hover {
-            transform: scale(1.05);
         }
 
         .card-grid {
@@ -144,6 +127,9 @@
             transition: all 0.25s ease;
             border: 1px solid #ffdfb8;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .card:hover {
@@ -152,18 +138,24 @@
             border-color: #ffbc7a;
         }
 
-        .card-img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            object-fit: cover;
+        .card-emoji {
+            font-size: 3.5rem;
             margin-bottom: 15px;
         }
 
         .card h3 {
-            font-size: 1.7rem;
+            font-size: 1.5rem;
             margin-bottom: 12px;
             color: #b45f2a;
+            word-break: break-word;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            word-break: break-word;
+            overflow-wrap: break-word;
+            max-width: 100%;
         }
 
         .btn {
@@ -185,52 +177,21 @@
             transform: scale(0.97);
         }
 
-        .pets-showcase {
-            margin: 60px 0;
-        }
-
-        .pets-showcase h2 {
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 35px;
-            color: #9b643a;
-        }
-
-        .pets-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
-        }
-
-        .pet-card {
-            background: #fff8f0;
-            border-radius: 40px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-        }
-
-        .pet-avatar {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-
-        .pet-name {
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin: 10px 0;
-            color: #b45f2a;
-        }
-
         .footer {
             background: #f5e1c8;
             color: #7a5a44;
             padding: 30px 0;
             text-align: center;
             border-top: 2px solid #ffd6b0;
+        }
+
+        .footer a {
+            color: #b45f2a;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 780px) {
@@ -242,6 +203,9 @@
             }
             .nav-bar {
                 flex-direction: column;
+            }
+            .card h3 {
+                font-size: 1.3rem;
             }
         }
     </style>
@@ -274,28 +238,28 @@
 
         <div class="card-grid">
             <div class="card">
-                <span class="card-emoji">✅</span>
+                <div class="card-emoji">✅</div>
                 <h3>Профессиональный уход</h3>
                 <p>Все свинки с родословной, привиты и здоровы. Мы заботимся о наших питомцах.</p>
             </div>
             <div class="card">
-                <span class="card-emoji">🥗</span>
+                <div class="card-emoji">🥗</div>
                 <h3>Правильное питание</h3>
                 <p>Сбалансированный рацион, витамины, свежее сено — наши свинки получают лучшее.</p>
             </div>
             <div class="card">
-                <span class="card-emoji">🧡</span>
+                <div class="card-emoji">🧡</div>
                 <h3>Забота и любовь</h3>
                 <p>Ручные, ласковые малыши, которые сразу полюбят вас!</p>
             </div>
         </div>
-
+    </div>
 </main>
 
 <footer class="footer">
     <div class="container">
-        <p> Питомник морских свинок «Плюша» © 2026 </p>
-        <p style="margin-top: 10px;"><a href="contact.html" style="color:#b45f2a;">Забронировать свинку</a> | <a href="about.html" style="color:#b45f2a;">О нас</a></p>
+        <p>Питомник морских свинок «Плюша» © 2026</p>
+        <p style="margin-top: 10px;"><a href="contact.html">Забронировать свинку</a> | <a href="about.html">О нас</a></p>
     </div>
 </footer>
 
