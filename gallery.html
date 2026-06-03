@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Наши морские свинки | Питомник "Пушистик"</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: linear-gradient(135deg, #fff9f0 0%, #fff0e0 100%); color: #4a3728; min-height: 100vh; display: flex; flex-direction: column; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 30px; }
+        .header { background: rgba(255, 245, 235, 0.95); backdrop-filter: blur(10px); border-bottom: 2px solid #ffd6b0; position: sticky; top: 0; padding: 15px 0; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo a { font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, #e8a35e, #c97e3a); background-clip: text; -webkit-background-clip: text; color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 30px; list-style: none; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; font-weight: 600; color: #8b5a2b; font-size: 1.1rem; padding: 8px 0; border-bottom: 2px solid transparent; }
+        .nav-links a:hover, .nav-links a.active { color: #d9782c; border-bottom-color: #d9782c; }
+        main { flex: 1; padding: 50px 0 70px; }
+        h1 { text-align: center; font-size: 2.5rem; color: #b45f2a; margin-bottom: 45px; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 35px; margin: 30px 0; }
+        .gallery-item { background: white; border-radius: 40px; padding: 25px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.05); transition: 0.2s; }
+        .gallery-item:hover { transform: scale(1.02); background: #fffaf5; }
+        .gallery-emoji { font-size: 5rem; display: block; margin-bottom: 15px; }
+        .gallery-item h3 { font-size: 1.6rem; color: #b45f2a; margin-bottom: 8px; }
+        .btn-small { background: #e8a35e; color: white; padding: 8px 18px; border-radius: 30px; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 12px; }
+        .footer { background: #f5e1c8; color: #7a5a44; padding: 30px 0; text-align: center; border-top: 2px solid #ffd6b0; }
+        @media (max-width: 780px) { .container { padding: 0 20px; } .nav-bar { flex-direction: column; } }
+    </style>
+</head>
+<body>
+<header class="header"><div class="container"><div class="nav-bar"><div class="logo"><a href="index.html">🐹 Пушистик</a></div><ul class="nav-links"><li><a href="index.html">Главная</a></li><li><a href="about.html">О питомнике</a></li><li><a href="gallery.html" class="active">Наши свинки</a></li><li><a href="contact.html">Контакты</a></li></ul></div></div></header>
+<main><div class="container"><h1>🐹 Наши прекрасные морские свинки 🐹</h1><div class="gallery-grid">
+<div class="gallery-item"><span class="gallery-emoji">🐹🧡</span><h3>Бусинка</h3><p>Американская | окрас агути | девочка<br>Игривая и любопытная</p><a href="contact.html" class="btn-small">Забронировать</a></div>
+<div class="gallery-item"><span class="gallery-emoji">🐹🤍</span><h3>Снежок</h3><p>Шелти | белый | мальчик<br>Очень нежный и спокойный</p><a href="contact.html" class="btn-small">Забронировать</a></div>
+<div class="gallery-item"><span class="gallery-emoji">🐹🖤🤎</span><h3>Шоколадка</h3><p>Тексель | коричневый | девочка<br>Кучерявая шубка, ласковая</p><a href="contact.html" class="btn-small">Забронировать</a></div>
+<div class="gallery-item"><span class="gallery-emoji">🐹💛</span><h3>Лимончик</h3><p>Розеттовая | золотистый | мальчик<br>Энергичный, любит общение</p><a href="contact.html" class="btn-small">Забронировать</a></div>
+<div class="gallery-item"><span class="gallery-emoji">🐹💜</span><h3>Фиалка</h3><p>Перуанская | серебристый | девочка<br>Длинная шубка, ласковая</p><a href="contact.html" class="btn-small">Забронировать</a></div>
+<div class="gallery-item"><span class="gallery-emoji">🐹❤️</span><h3>Мармеладка</h3><p>Коронет | рыже-белый | мальчик<br>Очень фотогеничный</p><a href="contact.html" class="btn-small">Забронировать</a></div>
+</div></div></main>
+<footer class="footer"><div class="container"><p>🐹 Все питомцы здоровы и ждут любящую семью! Забирайте пушистое счастье 🐹</p></div></footer>
+</body>
+</html>

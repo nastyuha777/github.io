@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты | Забронировать морскую свинку</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: linear-gradient(135deg, #fff9f0 0%, #fff0e0 100%); color: #4a3728; min-height: 100vh; display: flex; flex-direction: column; }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 30px; }
+        .header { background: rgba(255, 245, 235, 0.95); backdrop-filter: blur(10px); border-bottom: 2px solid #ffd6b0; position: sticky; top: 0; padding: 15px 0; }
+        .nav-bar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .logo a { font-size: 1.9rem; font-weight: 800; background: linear-gradient(135deg, #e8a35e, #c97e3a); background-clip: text; -webkit-background-clip: text; color: transparent; text-decoration: none; }
+        .nav-links { display: flex; gap: 30px; list-style: none; flex-wrap: wrap; }
+        .nav-links a { text-decoration: none; font-weight: 600; color: #8b5a2b; font-size: 1.1rem; padding: 8px 0; border-bottom: 2px solid transparent; }
+        .nav-links a:hover, .nav-links a.active { color: #d9782c; border-bottom-color: #d9782c; }
+        main { flex: 1; padding: 50px 0 70px; }
+        .contact-wrapper { display: flex; flex-wrap: wrap; gap: 40px; margin: 30px 0; }
+        .contact-info { flex: 1; background: white; border-radius: 45px; padding: 35px; }
+        .contact-form { flex: 1.5; background: white; border-radius: 45px; padding: 35px; }
+        h2 { color: #b45f2a; margin-bottom: 20px; }
+        .info-item { margin: 25px 0; display: flex; align-items: center; gap: 15px; font-size: 1.2rem; }
+        .info-emoji { font-size: 2rem; }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 14px; border-radius: 60px; border: 1px solid #ffd1a4; background: #fffcf5; font-size: 1rem; }
+        .form-group textarea { border-radius: 30px; resize: vertical; }
+        .btn { background: #e8a35e; color: white; padding: 14px 28px; border: none; border-radius: 60px; font-weight: bold; font-size: 1.1rem; cursor: pointer; width: 100%; }
+        .btn:hover { background: #c97e3a; }
+        .footer { background: #f5e1c8; color: #7a5a44; padding: 30px 0; text-align: center; }
+        @media (max-width: 780px) { .container { padding: 0 20px; } .nav-bar { flex-direction: column; } .contact-wrapper { flex-direction: column; } }
+    </style>
+</head>
+<body>
+<header class="header"><div class="container"><div class="nav-bar"><div class="logo"><a href="index.html">🐹 Пушистик</a></div><ul class="nav-links"><li><a href="index.html">Главная</a></li><li><a href="about.html">О питомнике</a></li><li><a href="gallery.html">Наши свинки</a></li><li><a href="contact.html" class="active">Контакты</a></li></ul></div></div></header>
+<main><div class="container"><h1 style="font-size:2.4rem; text-align:center;">📞 Свяжитесь с нами</h1><div class="contact-wrapper">
+<div class="contact-info"><h2>🐹 Как забронировать?</h2><div class="info-item"><span class="info-emoji">📞</span> +7 (999) 123-45-67</div><div class="info-item"><span class="info-emoji">✉️</span> cavia@pushistik.ru</div><div class="info-item"><span class="info-emoji">📍</span> Москва, ул. Пушистая, д.8 (по предварительной записи)</div><div class="info-item"><span class="info-emoji">⏰</span> Ежедневно 10:00 - 20:00</div><div class="info-item"><span class="info-emoji">💬</span> Telegram / WhatsApp: +7 (999) 123-45-67</div><p style="margin-top:20px;">Мы ответим на все вопросы про уход, кормление и поможем выбрать идеального питомца!</p></div>
+<div class="contact-form"><h2>✏️ Заявка на бронирование</h2><form action="#" method="post"><div class="form-group"><label>Ваше имя</label><input type="text" required placeholder="Анна"></div><div class="form-group"><label>Телефон или Email</label><input type="text" required placeholder="+7... или почта"></div><div class="form-group"><label>Какая свинка интересна?</label><select><option>Бусинка</option><option>Снежок</option><option>Шоколадка</option><option>Лимончик</option><option>Фиалка</option><option>Мармеладка</option><option>Другая (напишу в сообщении)</option></select></div><div class="form-group"><label>Сообщение / вопросы</label><textarea rows="3" placeholder="Расскажите о себе..."></textarea></div><button type="submit" class="btn">📩 Отправить заявку</button></form><p style="margin-top:15px; font-size:0.85rem;">После отправки мы свяжемся с вами в течение часа!</p></div>
+</div></div></main>
+<footer class="footer"><div class="container"><p>🐹 Питомник "Пушистик" — ответственное разведение и забота о каждом малыше 🐹</p></div></footer>
+</body>
+</html>
